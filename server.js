@@ -31,41 +31,68 @@ if (!fs.existsSync(dataDir)) {
 const booksFilePath = path.join(dataDir, 'books.json');
 if (!fs.existsSync(booksFilePath)) {
   const initialBooks = [
-    { 
-      id: 1, 
-      name: "The Silent Patient", 
-      author: "Alex Michaelides", 
-      category: "Thriller", 
-      date: "2024-12-15", 
-      image: "", 
-      notes: "A gripping psychological thriller with an unexpected twist ending. The way the author builds suspense throughout the narrative is masterful." 
+    {
+      "id": 1,
+      "name": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "category": "Thriller",
+      "date": "2025-08-24",
+      "image": "",
+      "notes": "This is the book that got me into reading thriller books. This will be the best thriller ever. Don't want to spoil the story. I borrowed this from Pranav after completing the Artemis fowl without any idea."
     },
-    { 
-      id: 2, 
-      name: "Atomic Habits", 
-      author: "James Clear", 
-      category: "Selfhelp", 
-      date: "2024-11-20", 
-      image: "", 
-      notes: "Great insights on building good habits and breaking bad ones. Key takeaway: focus on systems, not goals." 
+    {
+      "id": 2,
+      "name": "Artemis Fowl 1",
+      "author": "Eoin Colfer",
+      "category": "Fiction",
+      "date": "2025-08-10",
+      "image": "",
+      "notes": "Wanted to read this book series from class 10 after seeing this book with Abinav. It's a good book even though it is meant for kids. Introduction of the butler was sooo good and his fight with the troll was absolute cinema. After reading the book I wanted to complete the series."
     },
-    { 
-      id: 3, 
-      name: "Project Hail Mary", 
-      author: "Andy Weir", 
-      category: "Fiction", 
-      date: "2025-01-10", 
-      image: "", 
-      notes: "Amazing sci-fi adventure. Rocky is the best character! The science is fascinating and the friendship between the characters is heartwarming." 
+    {
+      "id": 3,
+      "name": "Anilaadum Mundril",
+      "author": "Na Muthukumar",
+      "category": "Simple",
+      "date": "2025-01-10",
+      "image": "",
+      "notes": "It’s a Tamil book I started reading for distraction during placements. It really did the job by distracting me and taking me back to my childhood days. The book contains letters the writer intended to write to each of his relatives. I didn’t read all of them — only the ones I felt connected to. The letters to the mother, father, sister, and Periyappa were wonderful. I may reread them again!"
     },
-    { 
-      id: 4, 
-      name: "The Alchemist", 
-      author: "Paulo Coelho", 
-      category: "Simple", 
-      date: "2024-10-05", 
-      image: "", 
-      notes: "A beautiful and simple story about following your dreams. Easy to read in one sitting." 
+    {
+      "id": 4,
+      "name": "The Alchemist",
+      "author": "Paulo Coelho",
+      "category": "Simple",
+      "date": "2024-04-05",
+      "image": "",
+      "notes": "A simple story about following your dreams. Sowshi's book and I randomly started reading the book. Many parts were boring, like the superstitious stuff, but it’s a good book that I can reread."
+    },
+    {
+      "id": 1763824855752,
+      "name": "Spider's Web",
+      "author": "Agatha Christy",
+      "category": "Thriller",
+      "date": "2025-09-14",
+      "image": "",
+      "notes": "I bought this book in second hand market for Rs.70 in a good condition. i didn't even know who was Agatha christy when I bought this. Completed this book during a trip to Thirchendur. The story was average but not that bad. It was little funny here and there but the final revealing of the murderer was not that satisfying. Once readable!!"
+    },
+    {
+      "id": 1763825123015,
+      "name": "Verity",
+      "author": "Colleen Hoover",
+      "category": "Thriller",
+      "date": "2025-09-28",
+      "image": "",
+      "notes": "I borrowed it from Pragathy after her recommendations for Thriller. The story was nice and it kept me in the edge of the seat throughout the read. The ending twist was satisfying and the open ending kept me hanging. Siva was not satisfied with the open ending."
+    },
+    {
+      "id": 1763825363967,
+      "name": "Artemis Fowl 2 (The Arctic Incident)",
+      "author": "Eoin Colfer",
+      "category": "Fiction",
+      "date": "2025-11-08",
+      "image": "",
+      "notes": "In this book Artemis will find his father and also realizes he is useless in many scenarios. The part where they fight against opal was good and interesting. But not that good. "
     }
   ];
   fs.writeFileSync(booksFilePath, JSON.stringify(initialBooks, null, 2));
